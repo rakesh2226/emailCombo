@@ -1,0 +1,65 @@
+/* Put your css in here */
+
+.multiselect-container{
+  position:relative;
+  zoom:1;
+  vertical-align:middle;
+  width:100%;
+}
+.close-icon {
+  color:yellow;
+  display:block;
+  width:12px;
+  height:15px;
+  top:3px;
+  left:7px;
+  right:4px;
+  font-weight:bold;
+  outline:none;
+  position:absolute;
+  text-decoration:none;
+  font-size:17px;
+  cursor:pointer;
+}
+.select-choice li {
+  list-style:none;
+  float:left;
+  line-height:20px;
+  position:relative;
+}
+.select-choice {
+  min-height:30px;
+  margin:0px;
+  padding:0px;
+  height:auto !important;
+  position:relative;
+  border: 1px solid #aaa;
+  cursor:text;
+  overflow:hidden;
+  background-color:#fff;
+  
+}
+.search-choice {
+  padding:3px 5px 3px 18px;
+  margin:3px 0px 3px 5px;
+  line-height:13px;
+  color:#fff;
+  border:1px solid #aaaaaa;
+  float:left;
+  background-color:gray;
+  box-shadow:0 0 2px #ffffff inset, 0 1px 0 rgba(0,0,0,0.05);
+  -webkit-border-radius: 3px;
+  cursor:default;
+}
+.search-field {
+  white-space:nowrap;
+  margin:0px;
+  padding:0px;
+}
+.search-field  input{
+  padding:5px;
+  outline:0px;
+  border:0px;
+  box-shadow:none;
+  margin:1px 0px;
+}
