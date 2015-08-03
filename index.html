@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.3/angular.js" data-semver="1.4.3"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <p>Enter Email Ids:</p>
+    <div class="multiselect-container">
+       <ul class="select-choice">
+           <li class="search-choice" ng-repeat="email in emails">
+              <div>{{email}}</div>
+              <a href="#" onclick="return false;" class="close-icon" ng-click="remove($index)">x</a>
+           </li>
+          
+           <li class="search-field">
+              <!--<input type="email" autocomplete="off" class="input-field" ng-model="inputVal" ng-keyup="onChangeText($event)" />-->
+              <input type="email" autocomplete="off" class="input-field" ng-model="inputVal" input-val="inputVal" email-combo/>
+           </li>
+       </ul>
+    </div>
+    <br><br><div style="color:green;font-size:12px;">Email format supported is xyz@abc.com. Want expert email validation, then please contact Nagendra And Rakesh. </div>
+  </body>
+</html>
